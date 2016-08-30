@@ -1,0 +1,125 @@
+
+// ------------- HOME VIEW -------------
+
+main {
+	background-color: $main-background;
+	position: relative;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+}
+
+.wrapper h4 {
+	font-family: $main-font;
+	font-weight: 600;
+	font-size: 22px;
+	color: $secondary-color;
+	margin: 2% 0;
+	transition: .3s;
+
+	@media all and (max-width: 650px) {
+		font-size: 18px;
+	}
+
+	@media all and (max-width: 480px) and (orientation: landscape) {
+		font-size: 15px;
+		margin: 4% 0;
+	}
+}
+
+.main-view button {
+	font-family: $main-font;
+	background-color: $secondary-color;
+	letter-spacing: 1px;
+	color: $main-color;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 18px;
+	padding: 20px 30px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 0 20px;
+	transition: background-color .5s, color .5s;
+
+	&:hover {
+		background-color: $maintenance-background;
+	}
+
+	@media all and (max-width: 650px) {
+		font-size: 16px;
+	}
+
+	@media all and (max-width: 480px) {
+		font-size: 12px;
+		padding: 10px 20px;
+		margin: 0 10px;
+	}
+
+	@media all and (max-width: 320px) and (orientation: landscape) {
+		font-size: 10px;
+	}
+}
+
+.wrapper img {
+	height: 75px;
+	padding: 0 5px;
+
+	@media all and (max-width: 650px) {
+		height: 45px;
+	}
+
+	@media all and (max-width: 480px) and (orientation: landscape) {
+		height: 40px;
+	}
+}
+
+// MAIN FOOTER
+
+.main-view footer {
+	font-family: $main-font;
+	color: $secondary-color;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	width: 85%;
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	@media all and (max-width: 650px) {
+		font-size: 14px;
+	}
+
+	@media all and (max-width: 480px) and (orientation: landscape) {
+		font-size: 10px;
+	}
+
+}
+
+.footer-right {
+	padding: 10px 0;
+}
+
+footer i {
+	color: $secondary-color;
+	font-size: 20px;
+}
+
+footer a {
+	text-decoration: none;
+	color: $secondary-color;
+	transition: color .5s;
+
+	&:hover {
+		color: $main-color;
+	}
+}
